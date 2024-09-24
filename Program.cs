@@ -7,7 +7,7 @@ namespace curly_octo_potato_code
         static void Main(string[] args)
         {
             Console.WriteLine("Hi, what's your name?");
-            string name = Convert.ToString(Console.ReadLine().ToLower());
+            string name = Console.ReadLine().ToLower();
             if (name == "jack")
             {
                 Console.Clear();
@@ -90,7 +90,7 @@ namespace curly_octo_potato_code
                                                 
         public static void Jacob()
         {
-            Console.WriteLine("tes2");
+            Console.WriteLine("My name is Jacob");
             Console.ReadLine();
         }       
                

@@ -76,13 +76,40 @@ namespace curly_octo_potato_code
 
         public static void Xavier()
         {
-            Console.WriteLine("g'day");
+            bool input = false;
+            int answer = 75, user = 0;
+            Console.WriteLine("What is 25 x 3");
+            while (!input)
+            {
+                try
+                {
+                    user = Convert.ToInt32(Console.ReadLine());
+                    input = true;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Invalid Input, please enter a number.\n");
+                    Console.WriteLine("What is 25 x 3");
+                    continue;
+                }
+            }
+            if (user == answer)
+            {
+                Console.WriteLine("\nCorrect!");
+            }
+            else
+            {
+                Console.WriteLine("\nIncorrect");
+            }
+            Thread.Sleep(1000);
+            Console.WriteLine("")
+            Console.WriteLine("\nPress <enter> to exit.");
             Console.ReadLine();
         }                
                                                 
         public static void Jacob()
         {
-            Console.WriteLine("tes2");
+            Console.WriteLine("test2");
             Console.ReadLine();
         }       
                
